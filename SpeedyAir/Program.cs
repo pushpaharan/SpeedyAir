@@ -21,7 +21,7 @@ foreach (Flight flight in flights)
 }
 
 //Load the orders from file
-List<Order> orders = LoadOrder("coding-assigment-orders.json"); 
+List<Order> orders = LoadOrder("../../../coding-assigment-orders.json"); 
 
 //Group the orders based on destinations
 var GroupedOrders = orders.GroupBy(x => x.destination).OrderBy(y => y.Key);
